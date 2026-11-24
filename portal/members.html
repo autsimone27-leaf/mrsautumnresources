@@ -1,0 +1,187 @@
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+  &lt;title&gt;Mrs. Autumn Resources — Member Dashboard&lt;/title&gt;
+  &lt;style&gt;
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(135deg,#fdf2f8,#fce7f3,#f3e8ff,#ede9fe);color:#1f2937;font:16px system-ui}
+  .wrap{max-width:1150px;margin:auto;padding:20px}
+  header{text-align:center;padding:30px 0 10px}
+  header h1{font-size:clamp(28px,5vw,48px);color:#9333ea;font-weight:1000;margin:0}
+  header p{color:#6b7280;margin:4px 0 0}
+  nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0}
+  nav a{text-decoration:none;padding:10px 18px;border-radius:12px;background:linear-gradient(135deg,#a855f7,#ec4899);color:#fff;font-weight:700;font-size:14px;transition:transform .15s,box-shadow .15s;box-shadow:0 3px 0 #7e22ce}
+  nav a:hover{transform:translateY(-2px);box-shadow:0 6px 0 #7e22ce}
+  section.panel{background:#fff;border-radius:22px;padding:28px;margin-top:20px;box-shadow:0 6px 25px rgba(147,51,234,.12);border:1px solid #e9d5ff}
+  section.panel h2{color:#7e22ce;margin-top:0;font-size:24px}
+  section.panel p{color:#6b7280;line-height:1.6}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}
+  .card{background:linear-gradient(135deg,#f5f3ff,#fdf2f8);border:2px solid #e9d5ff;border-radius:18px;padding:22px;text-align:center}
+  .card h3{color:#7e22ce;margin:0 0 6px;font-size:20px}
+  .card p{color:#6b7280;font-size:14px}
+  .card .icon{font-size:40px;margin-bottom:8px}
+  footer{text-align:center;padding:30px 0;color:#9ca3af;font-size:13px}
+  .badge{display:inline-block;padding:4px 10px;border-radius:8px;background:#f3e8ff;color:#7e22ce;font-size:12px;font-weight:700}
+  .unavailable{opacity:.55;pointer-events:none}
+  @media(max-width:600px){nav a{font-size:12px;padding:8px 12px}}
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="wrap"&gt;
+&lt;header&gt;
+  &lt;h1&gt;🍂 Mrs. Autumn Resources&lt;/h1&gt;
+  &lt;p&gt;Member Dashboard Prototype&lt;/p&gt;
+  &lt;span class="badge"&gt;Prototype Only — Not Live&lt;/span&gt;
+&lt;/header&gt;
+
+&lt;nav id="main-nav"&gt;
+  &lt;a href="#games"&gt;🎮 Games&lt;/a&gt;
+  &lt;a href="#interactive-lessons"&gt;📖 Interactive Lessons&lt;/a&gt;
+  &lt;a href="#math"&gt;🔢 Math&lt;/a&gt;
+  &lt;a href="#reading-writing"&gt;📚 Reading / Writing&lt;/a&gt;
+  &lt;a href="#worksheets"&gt;📄 Worksheets&lt;/a&gt;
+  &lt;a href="#assessments"&gt;✅ Assessments&lt;/a&gt;
+  &lt;a href="#study-skills"&gt;🧠 Study Skills&lt;/a&gt;
+  &lt;a href="#parent-resources"&gt;👨‍👩‍👧 Parent Resources&lt;/a&gt;
+  &lt;a href="#appointments"&gt;📅 Appointments&lt;/a&gt;
+  &lt;a href="#tutoring"&gt;🎓 Tutoring&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;!-- GAMES --&gt;
+&lt;section id="games" class="panel"&gt;
+  &lt;h2&gt;🎮 Games&lt;/h2&gt;
+  &lt;p&gt;Explore educational games built with our classic Energy Arena, Fishing Frenzy, Capture the Flag, Blaster Arena, Boss Battle, Gem Rush, Knockout Run, and Lava Climb modes.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt; &lt;a href="../games/index.html"&gt;Launch Games Portal&lt;/a&gt; (prototype link — redirects to the main interactive game at index.html)&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;⚡&lt;/div&gt;&lt;h3&gt;Classic Energy Arena&lt;/h3&gt;&lt;p&gt;Run, jump, answer, and earn energy.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;🎣&lt;/div&gt;&lt;h3&gt;Fishing Frenzy&lt;/h3&gt;&lt;p&gt;Cast, catch rare fish, and avoid junk.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;🚩&lt;/div&gt;&lt;h3&gt;Capture the Flag&lt;/h3&gt;&lt;p&gt;Pick a team and bring the flag home.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;💥&lt;/div&gt;&lt;h3&gt;Blaster Arena&lt;/h3&gt;&lt;p&gt;Earn shots, tag rivals, climb the leaderboard.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;🐉&lt;/div&gt;&lt;h3&gt;Boss Battle&lt;/h3&gt;&lt;p&gt;Team up. Correct answers damage the boss.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;💎&lt;/div&gt;&lt;h3&gt;Gem Rush&lt;/h3&gt;&lt;p&gt;Answer for mining charges, dig for treasure.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;❤️&lt;/div&gt;&lt;h3&gt;Knockout Run&lt;/h3&gt;&lt;p&gt;Three hearts. Keep your streak alive.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card"&gt;&lt;div class="icon"&gt;🌋&lt;/div&gt;&lt;h3&gt;Lava Climb&lt;/h3&gt;&lt;p&gt;Race upward; wrong answers slide you back.&lt;/p&gt;&lt;span class="badge"&gt;Available&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- INTERACTIVE LESSONS --&gt;
+&lt;section id="interactive-lessons" class="panel"&gt;
+  &lt;h2&gt;📖 Interactive Lessons&lt;/h2&gt;
+  &lt;p&gt;Browse interactive lessons organized by subject. This section is set up and linked from the portal structure.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt; &lt;a href="../interactive-lessons/index.html"&gt;View lessons (prototype link — placeholder, content coming soon)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📖&lt;/div&gt;&lt;h3&gt;Math Lessons&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📖&lt;/div&gt;&lt;h3&gt;Language Arts Lessons&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📖&lt;/div&gt;&lt;h3&gt;Science Lessons&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- MATH --&gt;
+&lt;section id="math" class="panel"&gt;
+  &lt;h2&gt;🔢 Math&lt;/h2&gt;
+  &lt;p&gt;Practice math concepts. The folder exists on this branch with a README. Actual worksheets and exercises are placeholder content.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt; &lt;a href="../math/index.html"&gt;View Math (prototype link — placeholder)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;➕&lt;/div&gt;&lt;h3&gt;Arithmetic&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;➗&lt;/div&gt;&lt;h3&gt;Fractions&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📐&lt;/div&gt;&lt;h3&gt;Geometry&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;🔢&lt;/div&gt;&lt;h3&gt;Word Problems&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- READING / WRITING --&gt;
+&lt;section id="reading-writing" class="panel"&gt;
+  &lt;h2&gt;📚 Reading / Writing&lt;/h2&gt;
+  &lt;p&gt;Reading and writing materials are organized in their respective folders. Links are placeholders pointing to the repository structure.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folders exist&lt;/span&gt; &lt;a href="../reading/index.html"&gt;View Reading (placeholder)&lt;/a&gt; · &lt;a href="../writing/index.html"&gt;View Writing (placeholder)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📖&lt;/div&gt;&lt;h3&gt;Reading Comprehension&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;✍️&lt;/div&gt;&lt;h3&gt;Creative Writing&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📝&lt;/div&gt;&lt;h3&gt;Grammar&lt;/h3&gt;&lt;p&gt;See grammar/ folder&lt;/p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📕&lt;/div&gt;&lt;h3&gt;Vocabulary&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- WORKSHEETS --&gt;
+&lt;section id="worksheets" class="panel"&gt;
+  &lt;h2&gt;📄 Worksheets&lt;/h2&gt;
+  &lt;p&gt;Printable worksheets are organized in the printable-worksheets folder. Links point to the repository folder structure.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt; &lt;a href="../printable-worksheets/index.html"&gt;View Worksheets (placeholder)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📝&lt;/div&gt;&lt;h3&gt;Math Worksheets&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📝&lt;/div&gt;&lt;h3&gt;Reading Worksheets&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📝&lt;/div&gt;&lt;h3&gt;Science Worksheets&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📝&lt;/div&gt;&lt;h3&gt;Writing Worksheets&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ASSESSMENTS --&gt;
+&lt;section id="assessments" class="panel"&gt;
+  &lt;h2&gt;✅ Assessments&lt;/h2&gt;
+  &lt;p&gt;Practice assessments are in the practice-assessments folder. Actual assessments are placeholder content at this stage.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt; &lt;a href="../practice-assessments/index.html"&gt;View Assessments (placeholder)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📋&lt;/div&gt;&lt;h3&gt;Pre-Assessments&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📋&lt;/div&gt;&lt;h3&gt;Post-Assessments&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📊&lt;/div&gt;&lt;h3&gt;Progress Reports&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- STUDY SKILLS --&gt;
+&lt;section id="study-skills" class="panel"&gt;
+  &lt;h2&gt;🧠 Study Skills&lt;/h2&gt;
+  &lt;p&gt;Study skills resources are in the study-skills folder. Content is placeholder at this stage.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt; &lt;a href="../study-skills/index.html"&gt;View Study Skills (placeholder)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📌&lt;/div&gt;&lt;h3&gt;Organization Tips&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;⏰&lt;/div&gt;&lt;h3&gt;Time Management&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;🧠&lt;/div&gt;&lt;h3&gt;Test Strategies&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- PARENT RESOURCES --&gt;
+&lt;section id="parent-resources" class="panel"&gt;
+  &lt;h2&gt;👨‍👩‍👧 Parent Resources&lt;/h2&gt;
+  &lt;p&gt;Resources for parents are in the parent-resources folder. Actual content is placeholder at this stage.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Folder exists&lt;/span&gt; &lt;a href="../parent-resources/index.html"&gt;View Parent Resources (placeholder)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;💡&lt;/div&gt;&lt;h3&gt;Supporting Learning at Home&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📞&lt;/div&gt;&lt;h3&gt;Contact Information&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📅&lt;/div&gt;&lt;h3&gt;Event Calendars&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- APPOINTMENTS --&gt;
+&lt;section id="appointments" class="panel"&gt;
+  &lt;h2&gt;📅 Appointments&lt;/h2&gt;
+  &lt;p&gt;Schedule appointments with Mrs. Autumn. This is a prototype link only — no actual booking system is connected.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Prototype link — no live booking&lt;/span&gt; &lt;a href="https://calendly.com" target="_blank" rel="noopener"&gt;Book via Calendly (placeholder link)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📅&lt;/div&gt;&lt;h3&gt;Schedule a Meeting&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;📅&lt;/div&gt;&lt;h3&gt;My Upcoming Appointments&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- TUTORING --&gt;
+&lt;section id="tutoring" class="panel"&gt;
+  &lt;h2&gt;🎓 Tutoring&lt;/h2&gt;
+  &lt;p&gt;Tutoring sessions are available by request. This is a prototype page — no live booking or payment system is connected.&lt;/p&gt;
+  &lt;p&gt;&lt;span class="badge"&gt;Prototype — no live booking&lt;/span&gt; &lt;a href="mailto:placeholder@example.com"&gt;Request Tutoring (placeholder email)&lt;/a&gt;&lt;/p&gt;
+  &lt;div class="grid"&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;🎓&lt;/div&gt;&lt;h3&gt;1-on-1 Tutoring&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;🎓&lt;/div&gt;&lt;h3&gt;Group Tutoring&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="card unavailable"&gt;&lt;div class="icon"&gt;🎓&lt;/div&gt;&lt;h3&gt;Tutoring Schedule&lt;/h3&gt;&lt;p&gt;Coming soon&lt;/p&gt;&lt;span class="badge"&gt;Unavailable&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;🍂 Mrs. Autumn Resources — Member Dashboard Prototype&lt;/p&gt;
+  &lt;p&gt;Prototype only. No public deployment. No fake authentication. No customer data. No purchases or charges.&lt;/p&gt;
+  &lt;p&gt;Branch: resources-organization &lt;span class="badge"&gt;Preserves main &amp; existing files&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;Pink/purple branding with gradient accent colors.&lt;/p&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
