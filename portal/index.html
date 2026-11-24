@@ -1,0 +1,215 @@
+  &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Mrs. Autumn's Resources Portal&lt;/title&gt;
+  &lt;style&gt;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5e6f3 0%, #e8d5f5 50%, #f0e6ff 100%);
+      min-height: 100vh;
+      color: #4a235a;
+    }
+    header {
+      background: linear-gradient(90deg, #9b59b6, #8e44ad, #6c3483);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(142, 68, 173, 0.3);
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      opacity: 0.9;
+    }
+    .category-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.5rem 1rem;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid #d7bde2;
+    }
+    .category-nav a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(135deg, #a569bd, #8e44ad);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(142, 68, 173, 0.2);
+      font-size: 0.95rem;
+    }
+    .category-nav a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(142, 68, 173, 0.4);
+      background: linear-gradient(135deg, #8e44ad, #6c3483);
+    }
+    .games-link {
+      background: linear-gradient(135deg, #e91e8a, #c0392b) !important;
+    }
+    .games-link:hover {
+      background: linear-gradient(135deg, #c0392b, #e91e8a) !important;
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .category-section {
+      background: rgba(255,255,255,0.95);
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(142, 68, 173, 0.15);
+      border-left: 5px solid #9b59b6;
+    }
+    .category-section h2 {
+      color: #6c3483;
+      margin-bottom: 1rem;
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #d7bde2;
+    }
+    .coming-soon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f5e6f3, #e8d5f5);
+      border-radius: 10px;
+      border: 2px dashed #9b59b6;
+      color: #8e44ad;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .coming-soon::before {
+      content: "🌟 ";
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(90deg, #6c3483, #8e44ad, #9b59b6);
+      color: white;
+      margin-top: 2rem;
+    }
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    @media (max-width: 768px) {
+      .category-nav {
+        gap: 0.8rem;
+      }
+      .category-nav a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+      }
+      .category-section {
+        padding: 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      header {
+        padding: 1rem 0.5rem;
+      }
+      .category-nav {
+        padding: 1rem 0.5rem;
+      }
+      main {
+        padding: 0 0.5rem;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Mrs. Autumn's Resources Portal&lt;/h1&gt;
+    &lt;p&gt;Browse educational resources by category&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;nav class="category-nav" aria-label="Category Navigation"&gt;
+    &lt;a href="../games/index.html"&gt;Games&lt;/a&gt;
+    &lt;a href="../grammar/index.html"&gt;Grammar&lt;/a&gt;
+    &lt;a href="../interactive-lessons/index.html"&gt;Interactive Lessons&lt;/a&gt;
+    &lt;a href="../math/index.html"&gt;Math&lt;/a&gt;
+    &lt;a href="../parent-resources/index.html"&gt;Parent Resources&lt;/a&gt;
+    &lt;a href="../practice-assessments/index.html"&gt;Practice &amp; Assessments&lt;/a&gt;
+    &lt;a href="../printable-worksheets/index.html"&gt;Printable Worksheets&lt;/a&gt;
+    &lt;a href="../reading/index.html"&gt;Reading&lt;/a&gt;
+    &lt;a href="../study-skills/index.html"&gt;Study Skills&lt;/a&gt;
+    &lt;a href="../writing/index.html"&gt;Writing&lt;/a&gt;
+  &lt;/nav&gt;
+
+  &lt;main&gt;
+    &lt;section class="category-section" aria-label="Games"&gt;
+      &lt;h2&gt;Games&lt;/h2&gt;
+      &lt;p&gt;&lt;a href="../games/index.html"&gt;View Games Resources&lt;/a&gt;&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Grammar"&gt;
+      &lt;h2&gt;Grammar&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Interactive Lessons"&gt;
+      &lt;h2&gt;Interactive Lessons&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Math"&gt;
+      &lt;h2&gt;Math&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Parent Resources"&gt;
+      &lt;h2&gt;Parent Resources&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Practice and Assessments"&gt;
+      &lt;h2&gt;Practice &amp; Assessments&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Printable Worksheets"&gt;
+      &lt;h2&gt;Printable Worksheets&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Reading"&gt;
+      &lt;h2&gt;Reading&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Study Skills"&gt;
+      &lt;h2&gt;Study Skills&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class="category-section" aria-label="Writing"&gt;
+      &lt;h2&gt;Writing&lt;/h2&gt;
+      &lt;div class="coming-soon"&gt;Coming Soon - Content Under Development&lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2026 Mrs. Autumn's Resources. Educational Portal for Learning.&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
